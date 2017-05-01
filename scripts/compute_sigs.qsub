@@ -1,0 +1,20 @@
+#!/bin/sh -login
+#PBS -A ged 
+#PBS -l walltime=00:04:00:00,nodes=01:ppn=1,mem=10gb
+#PBS -M philliptbrooks@gmail.com
+
+
+	cd ${PBS_O_WORKDIR}
+	source ~/env/bin/activate
+	module load GNU/6.2
+	
+###link pe
+	ln -fs ~brooksph/humanized_mouse_experiments_16S/fastq/*pe.fq.gz .
+
+### calculate signatures for humanized mouse data from MC57 and MC58 
+
+	for i in *fastq.gz 
+	do 
+		~/sourmash/sourmash compute -k 31 --scaled 10000 *pe.fq.gz 
+	done 
+

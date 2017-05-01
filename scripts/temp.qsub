@@ -1,0 +1,9 @@
+#!/bin/sh -login
+#PBS -A ged
+#PBS -l walltime=0:72:00:00,nodes=01:ppn=4,mem=200gb
+#PBS -m abe
+#PBS -M philliptbrooks@gmail.com
+
+cd ${PBS_O_WORKDIR}
+module load mothur/1.36.1
+mothur ../scripts/temp.sh

@@ -1,0 +1,28 @@
+#PBS -A ged 
+#PBS -l walltime=00:04:00:00,nodes=01:ppn=1,mem=10gb
+#PBS -M philliptbrooks@gmail.com
+
+
+	cd ${PBS_O_WORKDIR}
+	source ~/env/bin/activate
+	module load GNU/6.2
+
+###interleave all the reads 
+
+	for filename in *_R1*.fastq.gz
+	do
+     		# first, make the base by removing .extract.fastq.gz
+     		base=$(basename $filename .fastq.gz)
+     		echo $base
+
+     		# now, construct the R2 filename by replacing R1 with R2
+     		baseR2=${base/_R1/_R2}
+     		echo $baseR2
+
+     		# construct the output filename
+     		output=${base/_R1/}.pe.fq.gz
+
+     		(interleave-reads.py ${base}.fastq.gz ${baseR2}.fastq.gz | \
+         	gzip > $output)
+	done
+
