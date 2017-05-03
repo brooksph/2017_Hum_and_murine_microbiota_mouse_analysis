@@ -1,1 +1,4 @@
-/Users/philliptbrooks/Dropbox/2017_Dysfunction_of_the_gut_microbiome/results/IBD_unique_taxa.csv
+fraction,name,sketch_kmers,genome_fraction
+0.007,"NC_015977.1 Roseburia hominis A2-183, complete genome",3535967,0.061946902654867256
+0.006,"NZ_ACII02000003.1 Ruminococcus sp. 5_1_39BFAA acpfZ-supercont2.3, whole genome shotgun sequence",3692797,0.05309734513274336
+0.005,"NZ_BCAA01000001.1 Clostridia bacterium UC5.1-1E11 DNA, contig: contig00001, whole genome shotgun sequence",2966390,0.04424778761061947
