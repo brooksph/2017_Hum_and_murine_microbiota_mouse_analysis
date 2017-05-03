@@ -9,7 +9,7 @@
 	module load GNU/6.2
 	
 ###link pe
-	ln -fs ~brooksph/humanized_mouse_experiments_16S/fastq/*pe.fq.gz .
+	ln -fs ../fastq/*pe.fq.gz .
 
 ### calculate signatures for humanized mouse data from MC57 and MC58 
 
