@@ -1,4 +1,7 @@
-###This script will initiate the analysis of all the sequences from MC57 and MC58 with humanized mice with C57BL/6 and NOD wild-type mice.
+#Author: Phillip Brooks 
+#Affiliation: UC Davis Lab for Data Intensive Biology
+#Aim: This script will initiate the analysis of all the sequences from MC57 and MC58 with humanized mice with C57BL/6 and NOD wild-type mice.
+#Date: Tue Jan 16 2018
 
 #!/bin/sh -login
 #PBS -A ged 
