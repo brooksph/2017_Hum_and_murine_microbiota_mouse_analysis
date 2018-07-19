@@ -1,3 +1,7 @@
+#Author: Phillip Brooks 
+#Affiliation: UC Davis Lab for Data Intensive Biology
+#Date: Tue Jan 16 2018
+
 ##############
 #
 # batch_mothur_shared.m
