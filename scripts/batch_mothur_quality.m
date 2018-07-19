@@ -1,3 +1,7 @@
+#Author: Phillip Brooks 
+#Affiliation: UC Davis Lab for Data Intensive Biology
+#Date: Tue Jan 16 2018
+
 ##############
 #
 # This is a batch file for running through the quality filtering steps of mothur
