@@ -1,3 +1,7 @@
+#Author: Phillip Brooks 
+#Affiliation: UC Davis Lab for Data Intensive Biology
+#Date: Tue Jan 16 2018
+
 #PBS -A ged 
 #PBS -l walltime=00:04:00:00,nodes=01:ppn=1,mem=10gb
 #PBS -M philliptbrooks@gmail.com
